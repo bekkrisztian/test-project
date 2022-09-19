@@ -1,0 +1,43 @@
+.friend-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    cursor: pointer;
+    flex-direction: column;
+    min-width: fit-content;
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+
+    #status-img {
+        width: 15px !important;
+        height: 15px !important;
+        margin-left: -15px;
+        margin-top: 25px;
+    }
+
+    & > div {
+        display: flex;
+        align-items: center;
+
+        img {
+            display: flex;
+            align-self: center;
+            margin-right: 5px
+        }
+
+        .friend-info {
+            display: flex;
+            align-self: center;
+            flex-direction: column;
+            padding: 0px 40px;
+        }
+    }
+
+    .friend-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../../../assets/styles/variables.scss';
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+
+    #active-dot {
+        position: absolute;
+        top: 175px;
+        left: 80px;
+        width: 15px;
+    }
+
+    .details {
+        margin-left: -75px;
+
+        .name {
+            font-weight: 300;
+        }
+
+        .job {
+            font-weight: 300;
+            color: #7B8793;
+        }
+
+        .status {
+            padding-top: 5px;
+            color: $success;
+            cursor: pointer;
+        }
+
+        img {
+            padding: 1px;
+            cursor: pointer;
+        }
+    }
+    .details>* {
+        text-align: initial;
+    }
+
+    .settings {
+        cursor: pointer;
+    }
+}
+
+#profile-options-1 {
+    position: absolute;
+    left: 136px;
+    width: 140px;
+    border-radius: 5px;
+    padding: 0 5px;
+    right: 5px;
+    bottom: 1px solid gray;
+    background-color: #7B8793;
+    z-index: 20;
+    top: 185px;
+    cursor: pointer;
+    
+    p {
+        margin: 10px 5px;
+        color: white;
+    }
+}

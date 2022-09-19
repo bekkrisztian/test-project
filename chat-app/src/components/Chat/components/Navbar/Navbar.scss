@@ -1,0 +1,82 @@
+@import '../../../../assets/styles/variables.scss';
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: $success;
+    padding: 0 10px;
+
+    @media (min-width: 800px) {
+        display: none;
+    }
+
+    h2 {
+        display: flex;
+        align-self: center;
+        color: #fff;
+    }
+
+    #profile-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        cursor: pointer;
+
+        p {
+            display: flex;
+            align-self: center;
+            color: #fff;
+        }
+
+        #caret {
+            padding: 7px;
+        }
+
+        #avatar-img {
+            display: flex;
+            color: #fff;
+            align-self: center;
+            margin-right: 5px;
+            border-radius: 20px;
+        }
+
+        #profile-options {
+            position: absolute;
+            top: 50px;
+            border-radius: 5px;
+            padding: 0 5px;
+            right: 5px;
+            bottom: 1px solid gray;
+            background-color: #fff;
+            z-index: 20;
+
+            p {
+                margin: 10px 5px;
+                color: #000;
+            }
+        }
+        form {
+            .input-field {
+                input, select {
+                    height: 40px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        .button-success {
+            background-color: $success;
+            border: none;
+            padding: 5px;
+            width: 70px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    }
+}
